@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoxHomeAIO — запуск…</title>
+  <meta http-equiv="refresh" content="0; url=cmsaut.html">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e 60%, #0f3460);
+      color: #e8ecf5;
+      text-align: center;
+      padding: 24px;
+    }
+    .box {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 20px;
+      padding: 40px 48px;
+      max-width: 460px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.3);
+    }
+    .fox { font-size: 52px; line-height: 1; margin-bottom: 14px; }
+    h1 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+    p { font-size: 13.5px; color: #9aa3b0; margin-bottom: 22px; line-height: 1.5; }
+    a.open {
+      display: inline-block;
+      background: #F8C000;
+      color: #283038;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 12px;
+      transition: transform .15s, filter .15s;
+    }
+    a.open:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="fox">🦊</div>
+    <h1>FoxHomeAIO</h1>
+    <p>Открываю приложение…<br>Если оно не открылось автоматически — нажмите кнопку ниже.</p>
+    <a class="open" href="cmsaut.html">Открыть приложение</a>
+  </div>
+  <script>
+    // Мгновенный редирект без записи в историю (meta refresh — страховка)
+    location.replace('cmsaut.html');
+  </script>
+</body>
+</html>
